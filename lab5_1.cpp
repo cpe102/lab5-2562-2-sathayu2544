@@ -27,7 +27,11 @@ int main(){
 	x=0;
 	while(x<N)
 	{
+	
+	if (key ==age[x])
+	{
 		cout << name[x]<<"\n";
+		}
 		x++;
 	}
 	

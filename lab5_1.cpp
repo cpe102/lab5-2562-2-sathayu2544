@@ -8,16 +8,28 @@ int main(){
 	
 	string name[N];
 	int age[N];
-	cout << "Name of student = ";
-	cout << "Age of student = ";
+	int x = 0;
+	while(x < N)
+	{
+		cout << "Name of student " <<x+1<< " = ";
+	    cin >> name[x];
+	    cout << "Age of student " <<x+1<< " = ";
+	    cin >> age [x];
+	    x++;
+	}
+	
 	
 	int key;
 	cout << "--------------------------------------\n";
 	cout << "Enter an age to search: ";
 	cin >> key;
 	cout << "--------------------------------------\n";
-	
-
+	x=0;
+	while(x<N)
+	{
+		cout << name[x]<<"\n";
+		x++;
+	}
 	
 	cout << "--------------------------------------\n";
 	
